@@ -22,12 +22,10 @@ website: https://finbarr.dev
 website_full: https://finbarr.dev
 github: fbradyirl    # eg. daattali
 twitter: finbarrbrady   # eg. daattali
-tel: +44 0000 111111
-tel_full: tel:+440000000000
-google_maps: 'https://www.google.co.uk/maps/place/44+Perth+St,+Edinburgh,+Edinburgh+City+EH3+5BL'
+# tel: +44 0000 111111
+# tel_full: tel:+440000000000
+google_maps: 'https://maps.apple.com/?address=Galway,%20Ireland&auid=7812146429975975152&ll=53.275936,-9.042385&lsp=6489&q=Galway&t=m'
 address:
-  street: 44 Perth Street
-  postcode: EH3 5BL
   city: Galway
   country: Ireland
 
