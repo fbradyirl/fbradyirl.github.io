@@ -29,6 +29,5 @@ address:
   city: Galway
   country: Ireland
 
-
 # needed for travis-ci build
 exclude: [vendor]
