@@ -14,11 +14,6 @@ hosted in [Github pages](https://pages.github.com/).
 [Vitae Live Demo](https://jekyllt.github.io/vitae)
 
 
-## Screenshots
-
-![resume page](https://raw.githubusercontent.com/jekyllt/vitae/gh-pages/assets/images/vitae_screen.png)
-
-
 ### Deployment
 
 There are several alternatives to building and deploying the site:
