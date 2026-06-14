@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Finbarr Brady - Software Engineering Tech Lead at Cisco, developer of innovative mobile applications including Jelly SMS, Beyond Meditation, and Newseum.">
-    <title>Finbarr Brady</title>
+    <meta name="description" content="Finbarr Brady — Software Architect & Technical Leader at Cisco. 20+ years architecting and scaling distributed cloud platforms, including carrier-scale migrations serving 1.5M+ users.">
+    <title>Finbarr Brady — Software Architect & Technical Leader</title>
+
+    <!-- Open Graph / social -->
+    <meta property="og:title" content="Finbarr Brady — Software Architect & Technical Leader">
+    <meta property="og:description" content="20+ years architecting and scaling distributed cloud platforms. Architecture lead on Cisco Webex Wholesale.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finbarr.dev">
+    <meta name="theme-color" content="#0b5c6b">
+
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>FB</text></svg>" type="image/svg+xml">
-    <style>
-        :root { --favicon-color: #2563eb; }
-        @media (prefers-color-scheme: dark) {
-            :root { --favicon-color: #3b82f6; }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -22,11 +27,13 @@
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#apps">Portfolio</a>
+                <a href="#skills">Expertise</a>
+                <a href="#experience">Experience</a>
+                <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
+                <a href="Finbarr-Brady-Resume.pdf" class="nav-cta" target="_blank"><i class="fas fa-file-arrow-down"></i> Résumé</a>
             </div>
-            <div class="menu-toggle">
+            <div class="menu-toggle" aria-label="Menu">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -34,88 +41,195 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
+            <p class="hero-eyebrow">Galway, Ireland</p>
             <h1>Finbarr Brady</h1>
-            <p>Developer & Problem Solver</p>
+            <p class="hero-role">Software Architect <span>·</span> Technical Leader</p>
+            <p class="hero-tagline">I turn partner and product requirements into clear architecture — breaking complex features down with service owners to find the simplest solution that scales, not the most complicated one.</p>
+            <div class="hero-buttons">
+                <a href="Finbarr-Brady-Resume.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-file-arrow-down"></i> Download Résumé</a>
+                <a href="https://www.linkedin.com/in/finbarrbrady/" class="btn btn-ghost" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <div class="hero-metrics">
+                <div class="metric"><span class="metric-num">20+</span><span class="metric-label">Years in engineering</span></div>
+                <div class="metric"><span class="metric-num">1.5M+</span><span class="metric-label">Users at carrier scale</span></div>
+                <div class="metric"><span class="metric-num">150K+</span><span class="metric-label">Customer orgs migrated</span></div>
+                <div class="metric"><span class="metric-num">14+</span><span class="metric-label">Cloud services orchestrated</span></div>
+            </div>
             <div class="social-links">
-                <a href="https://github.com/fbradyirl/" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/finbarrbrady/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/fbradyirl/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/finbarrbrady/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
         <div class="wave"></div>
         <div class="wave-bottom"></div>
     </section>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
+    <section id="about" class="about reveal">
+        <h2>About</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>I'm a Software Engineering Tech Lead with Cisco, passionate about creating elegant solutions to complex problems. With extensive experience in both frontend and backend development, I lead teams in building user-friendly applications that make a difference.</p>
+                <p>I'm a software architect and technical leader with <strong>20+ years</strong> building and scaling complex, distributed systems — across cloud, mobile and large multi-tenant platforms.</p>
+                <p>Today I'm the architecture lead for <strong>Cisco Webex Wholesale</strong>, the multi-tenant platform that delivers cloud calling, meetings and collaboration to carrier and SMB partners worldwide. I set architecture standards, drive cross-cutting technical decisions, and steer carrier-scale migrations of an always-on platform serving millions of users.</p>
+                <p>I work at the intersection of <strong>architecture, scale and reliability</strong> — ensuring architectural coherence through governance and documented decisions, characterising system limits before they become production failures, and aligning engineering, product and partner teams across geographies behind a single technical direction. Pragmatic and evidence-led, with a deep foundation in quality and end-to-end verification.</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>Professional Experience</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/Cisco-logo.png" alt="Cisco Logo" style="width: 100%; height: 100%; object-fit: contain;">
-                </div>
-                <h3>Cisco</h3>
-                <p>Working on Cisco's Webex architecture, partner onboarding, and AI-driven development tools. Chief advocate for cutting edge tooling and AI developments, I drive innovation and technological advancement within the team.</p>
+    <section id="skills" class="skills reveal">
+        <h2>Areas of Expertise</h2>
+        <p class="section-subtitle">The disciplines I bring to architecting systems that have to stay up, scale predictably, and be safe to change.</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                <h3>Architecture</h3>
+                <p>Distributed systems · multi-tenant cloud / SaaS platforms · architecture governance &amp; decision records · service topology &amp; dependency modelling · API design</p>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://culc30.wordpress.com/wp-content/uploads/2023/01/ericsson-logo.webp" alt="Ericsson Logo" style="width: 100%; height: 100%; object-fit: contain;">
-                </div>
-                <h3>Ericsson</h3>
-                <p>I worked with Ericsson developing backend systems for their Mobile Operations Support Systems (OSS), focusing on performance optimization and scalability.</p>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-gauge-high"></i></div>
+                <h3>Scale &amp; Reliability</h3>
+                <p>Performance &amp; capacity analysis · concurrency &amp; rate-limit modelling · failure-mode characterisation · resilience, retry &amp; rollback · platform lifecycle &amp; health</p>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://pages.github.nceas.ucsb.edu/lter/github-workshop/images/github-logo.png" alt="GitHub Logo" style="width: 100%; height: 100%; object-fit: contain;">
-                </div>
-                <h3>Open Source Contributions</h3>
-                <p>I actively contribute to open source projects on GitHub, including Home Assistant and other community-driven initiatives. I'm passionate about collaborative software development and giving back to the developer community through code and knowledge sharing.</p>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-people-group"></i></div>
+                <h3>Technical Leadership</h3>
+                <p>Raising the engineering bar · technical sign-off &amp; quality gates · global matrixed alignment · mentoring emerging talent · influence without authority</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud &amp; DevOps</h3>
+                <p>GCP · OpenStack · Docker · Kubernetes · Jenkins · GitHub Actions · CI/CD pipelines · security-by-default practices</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h3>Engineering</h3>
+                <p>Java · Spring / Spring Boot · Python · event-driven systems (Kafka, SQS) · full-stack &amp; cloud development · native Apple platforms (Swift / Objective-C)</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Observability &amp; AI</h3>
+                <p>Metrics &amp; dashboards (Grafana) · AI-assisted engineering (Claude, Copilot, Codex, Gemini) · test automation &amp; end-to-end verification</p>
             </div>
         </div>
     </section>
 
-    <section id="apps" class="projects" style="background: #ffffff;">
-        <h2>Mobile App Portfolio</h2>
+    <section id="experience" class="experience reveal">
+        <h2>Experience</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-marker"><img src="images/Cisco-logo.png" alt="Cisco"></div>
+                <div class="timeline-body">
+                    <div class="timeline-head">
+                        <h3>Software Technical Leader / Architect</h3>
+                        <span class="timeline-date">2021 – Present</span>
+                    </div>
+                    <p class="timeline-org">Cisco Systems · Webex Wholesale</p>
+                    <ul>
+                        <li>Ensure <strong>architectural coherence</strong> through governance practices and documented decision records — leading the platform's Definition of Ready process so complex, cross-cutting features arrive engineering-ready with security, serviceability, observability, testing and API concerns resolved up front.</li>
+                        <li>Led the architecture and performance review for <strong>scaling an always-on platform</strong> through large-scale carrier migrations — a programme spanning <strong>150,000+ customer organisations and 1.5M+ users</strong> against hard end-of-life deadlines.</li>
+                        <li>Characterised the end-to-end performance envelope across <strong>14+ cloud services and 160+ API combinations</strong>, identified the binding throughput and concurrency constraints, and turned production-discovered failure modes into a validated, phased scale-up model.</li>
+                        <li>Champion <strong>platform lifecycle health, reliability and security-by-default</strong> for unattended 24×7 migration tooling; drive technical decisions across product, UX, architects, engineers and external technical leads in a global matrixed organisation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"><img src="images/Cisco-logo.png" alt="Cisco"></div>
+                <div class="timeline-body">
+                    <div class="timeline-head">
+                        <h3>Senior Software Engineer</h3>
+                        <span class="timeline-date">2011 – 2022</span>
+                    </div>
+                    <p class="timeline-org">Cisco Systems · Webex Teams &amp; Broadsoft integration</p>
+                    <ul>
+                        <li>Full-stack engineering across on-premise, hybrid and cloud — building microservices in <strong>Java / Spring Boot</strong> and Python with event-driven messaging (Kafka, SQS), on Docker, Kubernetes, OpenStack, Jenkins and GitHub Actions.</li>
+                        <li>Delivered core capabilities for Webex Teams and the migration of Broadsoft services onto the Cisco cloud, building the domain depth that underpins my architecture work today.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"><i class="fas fa-mobile-screen-button"></i></div>
+                <div class="timeline-body">
+                    <div class="timeline-head">
+                        <h3>Co-Founder &amp; CTO</h3>
+                        <span class="timeline-date">until 2016</span>
+                    </div>
+                    <p class="timeline-org">Webreach Ltd · native iOS / macOS product company</p>
+                    <ul>
+                        <li>Owned all technical direction; designed, built and shipped multiple App Store products downloaded <strong>420,000+ times</strong>, including a #1-ranked title — full ownership from architecture through release, monetisation and live operations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"><i class="fas fa-microchip"></i></div>
+                <div class="timeline-body">
+                    <div class="timeline-head">
+                        <h3>Earlier Career</h3>
+                    </div>
+                    <p class="timeline-org">Lumension Security · Nortel · Ericsson</p>
+                    <ul>
+                        <li>Test &amp; automation engineering leadership across telecom (CORE / WCDMA OSS), contact-centre and endpoint-security products — reusable automation frameworks, end-to-end and performance validation, and data-integrity verification from network node to presentation layer.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="recognition" class="recognition reveal">
+        <div class="award-banner">
+            <div class="award-icon"><i class="fas fa-award"></i></div>
+            <div class="award-text">
+                <h3>Collaboration Engineering Excellence Award</h3>
+                <p>Cisco · 2024 — recognising outstanding contribution through creativity, innovation and problem-solving.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="projects reveal">
+        <h2>Product Portfolio</h2>
+        <p class="section-subtitle">Earlier product work — native iOS / macOS apps I designed, built and shipped end-to-end.</p>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/jelly512.png" alt="Jelly SMS Logo" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img src="images/jelly512.png" alt="Jelly SMS Logo">
                 </div>
                 <h3>Jelly SMS</h3>
-                <p>A number one Irish hit messaging application that provides innovative text messaging features and user-friendly interface for seamless communication across Apple mobile and desktop devices. Originally developed as JSMS alongside my old pal Keith Flynn, RIP. ❤️‍🩹</p>
+                <p>A #1 Irish messaging app delivering innovative text messaging across Apple mobile and desktop devices, with a shared core and a polished, user-friendly experience. Originally developed as JSMS alongside my old pal Keith Flynn, RIP. ❤️‍🩹</p>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/beyond.png" alt="Beyond Meditation Logo" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img src="images/beyond.png" alt="Beyond Meditation Logo">
                 </div>
                 <h3>Beyond Meditation</h3>
-                <p>A mindfulness application designed to help users achieve deeper states of meditation through guided sessions, ambient sounds, and progress tracking.</p>
+                <p>A mindfulness app helping users reach deeper meditation through guided sessions, ambient sound and progress tracking — rich in AVFoundation, StoreKit and in-app purchases.</p>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/newseum.png" alt="Newseum Front Page" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="images/newseum.png" alt="Newseum Front Page">
                 </div>
-                <h3>Newseum</h3>
-                <p>The original <a href="https://frontpages.freedomforum.org" target="_blank">Newseum.org</a> mobile application, called <b>Extra! Extra!</b> which brought the front pages of newspapers worldwide to users fingertips in a user-friendly interface for iPhone and iPad.</p>
+                <h3>Newseum — Extra! Extra!</h3>
+                <p>The original <a href="https://frontpages.freedomforum.org" target="_blank">Newseum.org</a> mobile app, bringing the front pages of newspapers worldwide to iPhone and iPad.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact reveal">
         <h2>Get in Touch</h2>
         <div class="contact-content">
             <div class="contact-text">
-                <p>The best way to reach me is through LinkedIn. Feel free to connect with me for professional inquiries, collaborations, or just to say hello!</p>
-                <div class="contact-button">
-                    <a href="https://www.linkedin.com/in/finbarrbrady/" target="_blank" class="linkedin-button">
+                <p>Open to conversations about architecture, technical leadership and scaling distributed systems. The best way to reach me is LinkedIn.</p>
+                <div class="contact-buttons">
+                    <a href="https://www.linkedin.com/in/finbarrbrady/" target="_blank" class="btn btn-primary">
                         <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                    <a href="https://github.com/fbradyirl/" target="_blank" class="btn btn-ghost">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="Finbarr-Brady-Resume.pdf" target="_blank" class="btn btn-ghost">
+                        <i class="fas fa-file-arrow-down"></i> Download Résumé
                     </a>
                 </div>
             </div>
@@ -125,10 +239,6 @@
     <footer>
         <p>&copy; <span id="currentYear"></span> Finbarr Brady. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
 
     <script src="script.js"></script>
 </body>
